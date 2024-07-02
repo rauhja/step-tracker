@@ -53,7 +53,6 @@ struct HealthDataListView: View {
                         // Do code later
                     }
                 }
-                
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Dismiss") {
                         isShowingAddData = false
