@@ -14,6 +14,7 @@
 		FF67FB9F2C1C733900308585 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF67FB9E2C1C733900308585 /* Preview Assets.xcassets */; };
 		FF67FBA62C1C8B7200308585 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67FBA52C1C8B7200308585 /* HealthDataListView.swift */; };
 		FF6C0F402C3C5DAB00055FF0 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0F3F2C3C5DAB00055FF0 /* HealthKitManager.swift */; };
+		FF6C0F422C457FCC00055FF0 /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0F412C457FCC00055FF0 /* HealthMetric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FF67FBA52C1C8B7200308585 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
 		FF6C0F3E2C3C5B9D00055FF0 /* Step Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Step Tracker.entitlements"; sourceTree = "<group>"; };
 		FF6C0F3F2C3C5DAB00055FF0 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		FF6C0F412C457FCC00055FF0 /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				FF67FBA52C1C8B7200308585 /* HealthDataListView.swift */,
 				FF0844422C3413B70063FCAD /* HealthKitPermissionPrimingView.swift */,
 				FF6C0F3F2C3C5DAB00055FF0 /* HealthKitManager.swift */,
+				FF6C0F412C457FCC00055FF0 /* HealthMetric.swift */,
 				FF67FB9B2C1C733900308585 /* Assets.xcassets */,
 				FF67FB9D2C1C733900308585 /* Preview Content */,
 			);
@@ -153,6 +156,7 @@
 				FF67FBA62C1C8B7200308585 /* HealthDataListView.swift in Sources */,
 				FF6C0F402C3C5DAB00055FF0 /* HealthKitManager.swift in Sources */,
 				FF0844432C3413B70063FCAD /* HealthKitPermissionPrimingView.swift in Sources */,
+				FF6C0F422C457FCC00055FF0 /* HealthMetric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
