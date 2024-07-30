@@ -38,13 +38,14 @@ struct StepPieChart: View {
             
             Chart {
                 ForEach(chartData) { weekday in
+                    let isSelectedWeekday = selectedWeekday?.date.weekdayInt == weekday.date.weekdayInt
                     SectorMark(angle: .value("Average Steps", weekday.value),
                                innerRadius: .ratio(0.618),
-                               outerRadius: selectedWeekday?.date.weekdayInt == weekday.date.weekdayInt ? 140 : 110,
+                               outerRadius: isSelectedWeekday ? 140 : 110,
                                angularInset: 1)
                     .foregroundStyle(.pink.gradient)
                     .cornerRadius(6)
-                    .opacity(selectedWeekday?.date.weekdayInt == weekday.date.weekdayInt ? 1.0 : 0.3)
+                    .opacity(isSelectedWeekday ? 1.0 : 0.3)
                 }
             }
             .chartAngleSelection(value: $rawSelectedChartValue.animation(.easeInOut))
@@ -57,7 +58,7 @@ struct StepPieChart: View {
                             VStack {
                                 Text(selectedWeekday.date.weekdayTitle)
                                     .font(.title3.bold())
-                                    .contentTransition(.identity)
+                                    .animation(.none)
                                 
                                 Text(selectedWeekday.value, format: .number.precision(.fractionLength(0)))
                                     .fontWeight(.medium)
@@ -72,6 +73,11 @@ struct StepPieChart: View {
         }
         .padding()
         .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
+        .onChange(of: rawSelectedChartValue) { oldValue, newValue in
+            if newValue == nil {
+                rawSelectedChartValue = oldValue
+            }
+        }
     }
 }
 
