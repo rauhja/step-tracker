@@ -35,7 +35,7 @@ struct StepBarChart: View {
                     VStack(alignment: .leading) {
                         Label("Steps", systemImage: "figure.walk")
                             .font(.title3.bold())
-                            .foregroundStyle(.pink)
+                            .foregroundStyle(selectedStat.tint)
                         
                         Text("Avg: \(Int(avgStepCount)) Steps")
                             .font(.caption)
@@ -99,7 +99,7 @@ struct StepBarChart: View {
             .foregroundStyle(.secondary)
             Text(selectedHealthMetric?.value ?? 0, format: .number.precision(.fractionLength(0)))
                 .fontWeight(.heavy)
-                .foregroundStyle(.pink)
+                .foregroundStyle(selectedStat.tint)
         }
         .padding(12)
         .background(
