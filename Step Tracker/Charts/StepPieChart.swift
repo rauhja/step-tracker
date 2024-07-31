@@ -35,6 +35,7 @@ struct StepPieChart: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
+            .padding(.bottom, 12)
             
             if chartData.isEmpty {
                 ChartEmptyView(systemImageName: "chart.pie", title: "No Data", description: "There is no step count data from the Health App")
