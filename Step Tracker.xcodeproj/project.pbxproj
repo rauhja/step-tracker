@@ -28,6 +28,7 @@
 		FFF97A482C5AC9D800C6C4A7 /* ChartContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF97A472C5AC9D800C6C4A7 /* ChartContainer.swift */; };
 		FFF97A4A2C5AD10C00C6C4A7 /* ChartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF97A492C5AD10C00C6C4A7 /* ChartHelper.swift */; };
 		FFF97A4C2C5AD3F600C6C4A7 /* ChartAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF97A4B2C5AD3F600C6C4A7 /* ChartAnnotationView.swift */; };
+		FFF97A4E2C5AE50B00C6C4A7 /* STError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF97A4D2C5AE50B00C6C4A7 /* STError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		FFF97A472C5AC9D800C6C4A7 /* ChartContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainer.swift; sourceTree = "<group>"; };
 		FFF97A492C5AD10C00C6C4A7 /* ChartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHelper.swift; sourceTree = "<group>"; };
 		FFF97A4B2C5AD3F600C6C4A7 /* ChartAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAnnotationView.swift; sourceTree = "<group>"; };
+		FFF97A4D2C5AE50B00C6C4A7 /* STError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +88,9 @@
 		FF67FB962C1C733700308585 /* Step Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				FFF97A402C59207100C6C4A7 /* Utilities */,
 				FF6C0F3E2C3C5B9D00055FF0 /* Step Tracker.entitlements */,
 				FF67FB972C1C733700308585 /* Step_TrackerApp.swift */,
+				FFF97A402C59207100C6C4A7 /* Utilities */,
 				FF6C0F462C4596DD00055FF0 /* Charts */,
 				FF6C0F482C45973C00055FF0 /* Managers */,
 				FF6C0F472C45973700055FF0 /* Model */,
@@ -163,6 +165,7 @@
 			children = (
 				FF6C0F4D2C46E43500055FF0 /* Extensions */,
 				FFF97A412C59209F00C6C4A7 /* MockData.swift */,
+				FFF97A4D2C5AE50B00C6C4A7 /* STError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				FFF97A422C59209F00C6C4A7 /* MockData.swift in Sources */,
 				FFF97A462C5A578100C6C4A7 /* ChartEmptyView.swift in Sources */,
 				FF67FBA62C1C8B7200308585 /* HealthDataListView.swift in Sources */,
+				FFF97A4E2C5AE50B00C6C4A7 /* STError.swift in Sources */,
 				FF6C0F402C3C5DAB00055FF0 /* HealthKitManager.swift in Sources */,
 				FF0844432C3413B70063FCAD /* HealthKitPermissionPrimingView.swift in Sources */,
 				FFF97A4A2C5AD10C00C6C4A7 /* ChartHelper.swift in Sources */,
