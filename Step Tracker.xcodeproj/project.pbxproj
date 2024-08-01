@@ -29,6 +29,7 @@
 		FFF97A4A2C5AD10C00C6C4A7 /* ChartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF97A492C5AD10C00C6C4A7 /* ChartHelper.swift */; };
 		FFF97A4C2C5AD3F600C6C4A7 /* ChartAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF97A4B2C5AD3F600C6C4A7 /* ChartAnnotationView.swift */; };
 		FFF97A4E2C5AE50B00C6C4A7 /* STError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF97A4D2C5AE50B00C6C4A7 /* STError.swift */; };
+		FFF97A502C5B818800C6C4A7 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF97A4F2C5B818800C6C4A7 /* Array+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		FFF97A492C5AD10C00C6C4A7 /* ChartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHelper.swift; sourceTree = "<group>"; };
 		FFF97A4B2C5AD3F600C6C4A7 /* ChartAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAnnotationView.swift; sourceTree = "<group>"; };
 		FFF97A4D2C5AE50B00C6C4A7 /* STError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STError.swift; sourceTree = "<group>"; };
+		FFF97A4F2C5B818800C6C4A7 /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				FF6C0F4E2C46E44600055FF0 /* Date+Ext.swift */,
+				FFF97A4F2C5B818800C6C4A7 /* Array+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				FF6C0F422C457FCC00055FF0 /* HealthMetric.swift in Sources */,
 				FF6C0F4C2C46E31700055FF0 /* ChartDataTypes.swift in Sources */,
 				FFCF3AE72C53EE510060B9E9 /* StepPieChart.swift in Sources */,
+				FFF97A502C5B818800C6C4A7 /* Array+Ext.swift in Sources */,
 				FFF97A3F2C591F1B00C6C4A7 /* WeightLineChart.swift in Sources */,
 				FF6C0F4F2C46E44600055FF0 /* Date+Ext.swift in Sources */,
 			);
