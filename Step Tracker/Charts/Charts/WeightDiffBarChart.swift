@@ -52,6 +52,11 @@ struct WeightDiffBarChart: View {
                     AxisValueLabel()
                 }
             }
+            .overlay {
+                if chartData.isEmpty {
+                    ChartEmptyView(systemImageName: "chart.bar", title: "No Data", description: "There is no weight data from the Health App")
+                }
+            }
         }
         .sensoryFeedback(.selection, trigger: selectedDay)
         .onChange(of: rawSelectedDate) { oldValue, newValue in
@@ -59,14 +64,9 @@ struct WeightDiffBarChart: View {
                 selectedDay = newValue
             }
         }
-        .overlay {
-            if chartData.isEmpty {
-                ChartEmptyView(systemImageName: "chart.bar", title: "No Data", description: "There is no weight data from the Health App")
-            }
-        }
     }
 }
 
 #Preview {
-    WeightDiffBarChart(chartData: MockData.weightDiffs)
+    WeightDiffBarChart(chartData: [])
 }
