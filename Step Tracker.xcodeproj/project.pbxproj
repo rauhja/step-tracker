@@ -169,8 +169,8 @@
 			children = (
 				FF6C0F432C45946100055FF0 /* StepBarChart.swift */,
 				FFCF3AE62C53EE510060B9E9 /* StepPieChart.swift */,
-				FFF97A432C59328D00C6C4A7 /* WeightDiffBarChart.swift */,
 				FFF97A3E2C591F1B00C6C4A7 /* WeightLineChart.swift */,
+				FFF97A432C59328D00C6C4A7 /* WeightDiffBarChart.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
