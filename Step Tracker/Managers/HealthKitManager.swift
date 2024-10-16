@@ -9,15 +9,22 @@ import Foundation
 import HealthKit
 import Observation
 
-@Observable class HealthKitManager {
+@Observable
+@MainActor
+final class HealthKitData: Sendable {
+    var stepData: [HealthMetric] = []
+    var weightData: [HealthMetric] = []
+    var weightDiffData: [HealthMetric] = []
+}
+
+@Observable
+final class HealthKitManager: Sendable {
     
     let store = HKHealthStore()
     
     let types: Set = [HKQuantityType(.stepCount), HKQuantityType(.bodyMass)]
     
-    var stepData: [HealthMetric] = []
-    var weightData: [HealthMetric] = []
-    var weightDiffData: [HealthMetric] = []
+
     
     /// Fetch last 28 days of step count from HealthKit
     /// - Returns: Array of ``HealthMetric``
@@ -143,4 +150,24 @@ import Observation
         let startDate = calendar.date(byAdding: .day, value: -daysBack, to: endDate)!
         return .init(start: startDate, end: endDate)
     }
+//    func addSimulatorData() async {
+//        var mockSamples: [HKQuantitySample] = []
+//        
+//        for i in 0..<14 {
+//            let stepQuantity = HKQuantity(unit: .count(), doubleValue: .random(in: 4_000...20_000))
+//            let weightQuantity = HKQuantity(unit: .pound(), doubleValue: .random(in: (160 + Double(i/3)...165 + Double(i/3))))
+//            
+//            let startDate = Calendar.current.date(byAdding: .day, value: -i, to: .now)!
+//            let endDate = Calendar.current.date(byAdding: .second, value: 1, to: startDate)!
+//            
+//            let stepSample = HKQuantitySample(type: HKQuantityType(.stepCount), quantity: stepQuantity, start: startDate, end: endDate)
+//            let weightSample = HKQuantitySample(type: HKQuantityType(.bodyMass), quantity: weightQuantity, start: startDate, end: endDate)
+//            
+//            mockSamples.append(stepSample)
+//            mockSamples.append(weightSample)
+//        }
+//        
+//        try! await store.save(mockSamples)
+//        print("✅ Dummy Data sent up!")
+//    }
 }
