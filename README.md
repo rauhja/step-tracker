@@ -14,7 +14,11 @@ Step Tracker also allows you to upload new step or weight data to the Apple Heal
 
 # Animated Swift Charts
 
-# I'm Most Proud Of...
+
+
+https://github.com/user-attachments/assets/0becd7e2-aee9-4c9d-aac1-5c6789153149
+
+
 
 # Completeness
 
