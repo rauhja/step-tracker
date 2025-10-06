@@ -37,6 +37,11 @@ struct HealthDataListView: View {
         .sheet(isPresented: $isShowingAddData) {
             addDataView
         }
+        .overlay {
+            if listData.isEmpty {
+                ContentUnavailableView("No \(metric.title) to Display ", systemImage: metric == .steps ? "figure.walk" : "figure")
+            }
+        }
         .toolbar {
             Button("Add Data", systemImage: "plus") {
                 isShowingAddData = true
@@ -47,7 +52,7 @@ struct HealthDataListView: View {
     var addDataView: some View {
         NavigationStack {
             Form {
-                DatePicker("Data", selection: $addDataDate, displayedComponents: .date)
+                DatePicker("Date", selection: $addDataDate, displayedComponents: .date)
                 LabeledContent(metric.title) {
                     TextField("Value", text: $valueToAdd)
                         .multilineTextAlignment(.trailing)
@@ -121,5 +126,6 @@ struct HealthDataListView: View {
     NavigationStack {
         HealthDataListView(metric: .steps)
             .environment(HealthKitManager())
+            .environment(HealthKitData())
     }
 }
