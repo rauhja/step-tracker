@@ -15,7 +15,6 @@ enum ChartType {
 }
 
 struct ChartContainer<Content: View>: View {
-    
     let chartType: ChartType
     @ViewBuilder var content: () -> Content
     
