@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HealthDataListView: View {
-    
     @Environment(HealthKitManager.self) private var hkManager
     @Environment(HealthKitData.self) private var hkData
     @Namespace var zoomTransition
