@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF0844432C3413B70063FCAD /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0844422C3413B70063FCAD /* HealthKitPermissionPrimingView.swift */; };
 		FF1D440A2E94468100FAF658 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D44092E94468100FAF658 /* CustomModifiers.swift */; };
+		FF1D440C2E95706900FAF658 /* DataAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D440B2E95706900FAF658 /* DataAnalyzer.swift */; };
 		FF67FB982C1C733700308585 /* Step_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67FB972C1C733700308585 /* Step_TrackerApp.swift */; };
 		FF67FB9A2C1C733700308585 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67FB992C1C733700308585 /* DashboardView.swift */; };
 		FF67FB9C2C1C733900308585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF67FB9B2C1C733900308585 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		FF0844422C3413B70063FCAD /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
 		FF1D44092E94468100FAF658 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		FF1D440B2E95706900FAF658 /* DataAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAnalyzer.swift; sourceTree = "<group>"; };
 		FF67FB942C1C733700308585 /* Step Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF67FB972C1C733700308585 /* Step_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_TrackerApp.swift; sourceTree = "<group>"; };
 		FF67FB992C1C733700308585 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				FFF97A412C59209F00C6C4A7 /* MockData.swift */,
 				FFF97A4D2C5AE50B00C6C4A7 /* STError.swift */,
 				FF1D44092E94468100FAF658 /* CustomModifiers.swift */,
+				FF1D440B2E95706900FAF658 /* DataAnalyzer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				FFF97A442C59328D00C6C4A7 /* WeightDiffBarChart.swift in Sources */,
 				FF6C0F442C45946100055FF0 /* StepBarChart.swift in Sources */,
 				FFF97A4C2C5AD3F600C6C4A7 /* ChartAnnotationView.swift in Sources */,
+				FF1D440C2E95706900FAF658 /* DataAnalyzer.swift in Sources */,
 				FFF97A482C5AC9D800C6C4A7 /* ChartContainer.swift in Sources */,
 				FFF97A422C59209F00C6C4A7 /* MockData.swift in Sources */,
 				FFF97A462C5A578100C6C4A7 /* ChartEmptyView.swift in Sources */,
