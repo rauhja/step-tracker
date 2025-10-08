@@ -13,10 +13,13 @@ import FoundationModels
 final class DataAnalyzer {
     static let shared = DataAnalyzer()
     let model: SystemLanguageModel = .default
+    var isThinking = false
+    var coachMessage: String.PartiallyGenerated?
     
     private init() { }
 
     func analyzeHealthData() async {
+        isThinking = true
         let session = LanguageModelSession(tools: [HealthDataTool()],
                                            instructions: "You are a high-energy motivational fitness coach. You love to analyse step count and weight data to surface valuable insights and motivate people along their fitness journey and help them with their fitness goals.")
         let prompt = """
@@ -34,8 +37,13 @@ final class DataAnalyzer {
         """
         
         do {
-            let response = try await session.respond(to: prompt)
-            print(response.content)
+            let stream = session.streamResponse(to: prompt)
+            for try await partial in stream {
+                isThinking = false
+                if partial.content != "null" {
+                    coachMessage = partial.content
+                }
+            }
         } catch {
             print(error.localizedDescription)
         }
