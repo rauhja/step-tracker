@@ -10,6 +10,7 @@
 		FF0844432C3413B70063FCAD /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0844422C3413B70063FCAD /* HealthKitPermissionPrimingView.swift */; };
 		FF1D440A2E94468100FAF658 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D44092E94468100FAF658 /* CustomModifiers.swift */; };
 		FF1D440C2E95706900FAF658 /* DataAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D440B2E95706900FAF658 /* DataAnalyzer.swift */; };
+		FF1D44432E96DCC100FAF658 /* CoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D44422E96DCB900FAF658 /* CoachView.swift */; };
 		FF67FB982C1C733700308585 /* Step_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67FB972C1C733700308585 /* Step_TrackerApp.swift */; };
 		FF67FB9A2C1C733700308585 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67FB992C1C733700308585 /* DashboardView.swift */; };
 		FF67FB9C2C1C733900308585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF67FB9B2C1C733900308585 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		FF0844422C3413B70063FCAD /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
 		FF1D44092E94468100FAF658 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		FF1D440B2E95706900FAF658 /* DataAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAnalyzer.swift; sourceTree = "<group>"; };
+		FF1D44422E96DCB900FAF658 /* CoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachView.swift; sourceTree = "<group>"; };
 		FF67FB942C1C733700308585 /* Step Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF67FB972C1C733700308585 /* Step_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_TrackerApp.swift; sourceTree = "<group>"; };
 		FF67FB992C1C733700308585 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		FF6C0F452C45969C00055FF0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FF1D44422E96DCB900FAF658 /* CoachView.swift */,
 				FF67FB992C1C733700308585 /* DashboardView.swift */,
 				FF0844422C3413B70063FCAD /* HealthKitPermissionPrimingView.swift */,
 				FF67FBA52C1C8B7200308585 /* HealthDataListView.swift */,
@@ -350,6 +353,7 @@
 				FF6C0F402C3C5DAB00055FF0 /* HealthKitManager.swift in Sources */,
 				FF0844432C3413B70063FCAD /* HealthKitPermissionPrimingView.swift in Sources */,
 				FFF97A4A2C5AD10C00C6C4A7 /* ChartHelper.swift in Sources */,
+				FF1D44432E96DCC100FAF658 /* CoachView.swift in Sources */,
 				FF6C0F422C457FCC00055FF0 /* HealthMetric.swift in Sources */,
 				FF6C0F4C2C46E31700055FF0 /* ChartDataTypes.swift in Sources */,
 				FFCF3AE72C53EE510060B9E9 /* StepPieChart.swift in Sources */,
