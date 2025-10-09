@@ -11,6 +11,7 @@
 		FF1D440A2E94468100FAF658 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D44092E94468100FAF658 /* CustomModifiers.swift */; };
 		FF1D440C2E95706900FAF658 /* DataAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D440B2E95706900FAF658 /* DataAnalyzer.swift */; };
 		FF1D44432E96DCC100FAF658 /* CoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D44422E96DCB900FAF658 /* CoachView.swift */; };
+		FF1D44452E98004C00FAF658 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = FF1D44442E98004C00FAF658 /* AppIcon.icon */; };
 		FF67FB982C1C733700308585 /* Step_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67FB972C1C733700308585 /* Step_TrackerApp.swift */; };
 		FF67FB9A2C1C733700308585 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67FB992C1C733700308585 /* DashboardView.swift */; };
 		FF67FB9C2C1C733900308585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF67FB9B2C1C733900308585 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		FF1D44092E94468100FAF658 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		FF1D440B2E95706900FAF658 /* DataAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAnalyzer.swift; sourceTree = "<group>"; };
 		FF1D44422E96DCB900FAF658 /* CoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachView.swift; sourceTree = "<group>"; };
+		FF1D44442E98004C00FAF658 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		FF67FB942C1C733700308585 /* Step Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF67FB972C1C733700308585 /* Step_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_TrackerApp.swift; sourceTree = "<group>"; };
 		FF67FB992C1C733700308585 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				FF6C0F452C45969C00055FF0 /* Screens */,
 				FF67FB9B2C1C733900308585 /* Assets.xcassets */,
 				FF67FB9D2C1C733900308585 /* Preview Content */,
+				FF1D44442E98004C00FAF658 /* AppIcon.icon */,
 			);
 			path = "Step Tracker";
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				FF67FB9F2C1C733900308585 /* Preview Assets.xcassets in Resources */,
 				FF67FB9C2C1C733900308585 /* Assets.xcassets in Resources */,
+				FF1D44452E98004C00FAF658 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
